@@ -1,9 +1,226 @@
+<!DOCTYPE HTML>
+<!--
+--- Code adapted from http://demos.jquerymobile.com/1.2.1/docs/pages/page-anatomy.html
+---   for basic page setup and navbar. 
+--- Code adapted from http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center
+---   for the text overlay.
+-->
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JD's Steakhouse</title>
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-{insert thesis here}
+
+    	<!-- starting page -->
+<div id="page" data-role="page" data-theme="a">
+        
+            <header data-role="header">
+            	  <div class="splash">
+                      <a href="#page">
+                          <img src="img/003.jpg" width="990" height="453" alt="" />
+                          <div class="center">
+                              <h1>JD's Steakhouse</h1>
+                          </div>
+                      </a>
+                  </div>
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#page" data-transition="slide">Home</a></li>
+                          <li><a href="#menu" data-transition="slide">Menu</a></li>
+                          <li><a href="#locations" data-transition="slide">Locations</a></li>
+                          <li><a href="#reservations" data-transition="slide">Reservations</a></li>
+                          <li><a href="#about" data-transition="slide">About Us</a></li>
+                      </ul>
+                  </div>
+            </header>
+            
+            <div data-role="content">
+                    <p> { events roll } </p>
+            </div>
+            
+            <footer data-role="footer">
+            	<div class="social-media-row">
+                	<a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                </div>
+                <h4> JD's Steakhouse © Copyright 2016-18</h4>
+            </footer>
+        </div>
+
+
+        
+        <!-- menu -->
+        <div id="menu" data-role="page" data-theme="a">
+            <header data-role="header">
+            	  <div class="splash">
+                      <a href="#page">
+                          <img src="img/003.jpg" width="990" height="453" alt="" />
+                          <div class="center">
+                              <h1>JD's Steakhouse</h1>
+                          </div>
+                      </a>
+                  </div>
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#page" data-transition="slide">Home</a></li>
+                          <li><a href="#menu" data-transition="slide">Menu</a></li>
+                          <li><a href="#locations" data-transition="slide">Locations</a></li>
+                          <li><a href="#reservations" data-transition="slide">Reservations</a></li>
+                          <li><a href="#about" data-transition="slide">About Us</a></li>
+                      </ul>
+                  </div>
+            </header>
+            
+          <div data-role="content">
+                <h2> Menu </h2>
+                <p> { classic menu choices } </p>
+                <p> <a href="#page" data-transition="slide" data-direction="reverse"> Return </a> </p>
+            </div>
+            
+            <footer data-role="footer">
+            	<div class="social-media-row">
+                	<a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                </div>
+                <h4> JD's Steakhouse © Copyright 2016-18</h4>
+            </footer>
+        </div>
+        
+        
+        
+        <!-- locations -->
+        <div id="locations" data-role="page" data-theme="a">
+            <header data-role="header">
+            	  <div class="splash">
+                      <a href="#page">
+                          <img src="img/003.jpg" width="990" height="453" alt="" />
+                          <div class="center">
+                              <h1>JD's Steakhouse</h1>
+                          </div>
+                      </a>
+                  </div>
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#page" data-transition="slide">Home</a></li>
+                          <li><a href="#menu" data-transition="slide">Menu</a></li>
+                          <li><a href="#locations" data-transition="slide">Locations</a></li>
+                          <li><a href="#reservations" data-transition="slide">Reservations</a></li>
+                          <li><a href="#about" data-transition="slide">About Us</a></li>
+                      </ul>
+                  </div>
+            </header>
+            
+            <div data-role="content">
+                <h2> Locations </h2>
+                <p> { state selection dropdown list } { city selection dropdown list } { find closest restaurant (using GPS) }</p>
+                <ul>
+                    <li>{ make reservation }</li>
+                	<li>address</li>
+                	<li>phone</li>
+                	<li>fax</li>
+                	<li>days | hours open</li>
+                	<li>managers</li>
+                	<li>awards</li>
+                	<li>photos</li>
+                	<li>map (Google maps)</li>
+                	<li>? other features ?</li>
+                </ul>
+                <p> <a href="#page" data-transition="slide" data-direction="reverse"> Return </a> </p>
+            </div>
+            
+            <footer data-role="footer">
+            	<div class="social-media-row">
+                	<a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                </div>
+                <h4> JD's Steakhouse © Copyright 2016-18</h4>
+            </footer>
+        </div>
+        
+        
+        
+        <!-- reservations -->
+        <div id="reservations" data-role="page" data-theme="a">
+            <header data-role="header">
+            	  <div class="splash">
+                      <a href="#page">
+                          <img src="img/003.jpg" width="990" height="453" alt="" />
+                          <div class="center">
+                              <h1>JD's Steakhouse</h1>
+                          </div>
+                      </a>
+                  </div>
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#page" data-transition="slide">Home</a></li>
+                          <li><a href="#menu" data-transition="slide">Menu</a></li>
+                          <li><a href="#locations" data-transition="slide">Locations</a></li>
+                          <li><a href="#reservations" data-transition="slide">Reservations</a></li>
+                          <li><a href="#about" data-transition="slide">About Us</a></li>
+                      </ul>
+                  </div>
+            </header>
+            
+            <div data-role="content">
+                <h2> Reservations </h2>
+                <p> { list current reservations } </p>
+                <p> <a href="#page" data-transition="slide" data-direction="reverse"> Return </a> </p>
+            </div>
+            
+            <footer data-role="footer">
+            	<div class="social-media-row">
+                	<a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                </div>
+                <h4> JD's Steakhouse © Copyright 2016-18</h4>
+            </footer>
+        </div>
+
+
+
+		<!-- about us -->
+        <div id="about" data-role="page" data-theme="a">
+            <header data-role="header">
+            	  <div class="splash">
+                      <a href="#page">
+                          <img src="img/003.jpg" width="990" height="453" alt="" />
+                          <div class="center">
+                              <h1>JD's Steakhouse</h1>
+                          </div>
+                      </a>
+                  </div>
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#page" data-transition="slide">Home</a></li>
+                          <li><a href="#menu" data-transition="slide">Menu</a></li>
+                          <li><a href="#locations" data-transition="slide">Locations</a></li>
+                          <li><a href="#reservations" data-transition="slide">Reservations</a></li>
+                          <li><a href="#about" data-transition="slide">About Us</a></li>
+                      </ul>
+                  </div>
+            </header>
+            
+            <div data-role="content">
+                <h2> About Us </h2>
+                <p> { company history } </p>
+                <p> <a href="#page" data-transition="slide" data-direction="reverse"> Return </a> </p>
+            </div>
+            
+            <footer data-role="footer">
+            	<div class="social-media-row">
+                	<a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                </div>
+                <h4> JD's Steakhouse © Copyright 2016-18</h4>
+            </footer>
+        </div>
+
+
 </body>
 </html>
